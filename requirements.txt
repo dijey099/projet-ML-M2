@@ -1,0 +1,6 @@
+flask
+flask_cors
+httpx==0.14.2
+googletrans==4.0.0-rc1
+openai==0.28.0
+gTTS

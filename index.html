@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hanotany aho</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Hanotany aho</h1>
+        <h3>Andrianina & Fy Tiana</h3>
+        <div class="input-container">
+            <input type="text" id="question" placeholder="Anontanio izay tianao ho fantatra ...">
+            <button id="ask-button">Manontany</button>
+        </div>
+        <div id="response-container" class="response-container">
+            <div id="response-text" class="hidden">Miandry valiny...</div>
+            <div class="loader hidden"></div>
+            <div class="audio-controls hidden">
+                <audio id="audio-player" src="static/out.mp3" controls></audio>
+                <a id="download-button" class="hidden" href="static/out.mp3" download>Alaina</a>
+            </div>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    background-color: #2b2b2b;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center align the content */
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #ea5555;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center; /* Center align the child elements */
+    margin-bottom: 30px;
+}
+
+#question {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#ask-button {
+	margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #ea5555;
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.response-container {
+    position: relative; /* Position relative for absolute positioning */
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+#response-text {
+    margin-bottom: 10px; /* Add some space between text and loader */
+}
+
+.loader {
+    position: absolute; /* Position loader absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the loader */
+    border: 5px solid #f3f3f3; /* Light grey border */
+    border-top: 5px solid #ea5555; /* Red border */
+    border-radius: 50%; /* Make it round */
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    animation: spin 1s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+/* Add custom styles for audio player */
+#audio-player {
+    width: calc(100% - 120px); /* Adjust width to leave space for download button */
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+/* Style download button */
+#download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ea5555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#download-button:hover {
+    background-color: #d84315; /* Darker shade of red on hover */
+}
+
+
+
+/* Add custom styles for text */
+.response-text {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Add custom styles for audio player */
+#audio-player {
+    width: calc(100% - 120px); /* Adjust width to leave space for download button */
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+/* Style download button */
+#download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ea5555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#download-button:hover {
+    background-color: #d84315; /* Darker shade of red on hover */
+}
+
+.hidden {
+    display: none; /* Hide elements with this class */
+}
