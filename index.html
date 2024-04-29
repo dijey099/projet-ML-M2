@@ -3,14 +3,25 @@
 <head>
     <title>Hanotany aho</title>
     <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Raleway:wght@100;200;300;400;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Hanotany aho</h1>
+        <!--<h1 class="title">Hanotany aho</h1>-->
+        <h1 class="span load"><span class="m">A</span><span class="m">N</span><span class="m">O</span><span class="m">T</span><span class="m">A</span><span class="m">N</span><span class="m">I</span><span class="m">O</span>&nbsp;<span class="m">A</span><span class="m">H</span><span class="m">O</span></span></h1>
         <h3>Andrianina & Fy Tiana</h3>
         <div class="input-container">
             <input type="text" id="question" placeholder="Anontanio izay tianao ho fantatra ...">
             <button id="ask-button">Manontany</button>
+            <button id="refresh-button"><i class="fas fa-sync-alt"></i></button>
         </div>
         <div id="response-container" class="response-container">
             <div id="response-text" class="hidden">Miandry valiny...</div>
@@ -21,6 +32,30 @@
             </div>
         </div>
     </div>
+    <canvas class="background"></canvas>
     <script src="static/script.js"></script>
+    <script>
+        window.onload = function () {
+    Particles.init({
+      selector: ".background"
+    });
+  };
+  const particles = Particles.init({
+    selector: ".background",
+    color: ["#03dac6", "#ff0266", "#000000"],
+    connectParticles: true,
+    responsive: [
+{
+        breakpoint: 768,
+        options: {
+          color: ["#faebd7", "#03dac6", "#ff0266"],
+          maxParticles: 43,
+          connectParticles: false
+        }
+      }
+    ]
+  });
+  
+    </script>
 </body>
 </html>

@@ -7,6 +7,7 @@ const loader = document.querySelector('.loader');
 const audioContainer = document.querySelector('.audio-controls');
 const audioPlayer = document.getElementById('audio-player');
 const downloadButton = document.getElementById('download-button');
+const refreshButton = document.getElementById('refresh-button');
 
 
 window.onload = () => {
@@ -59,4 +60,14 @@ askButton.addEventListener('click', () => {
         responseText.classList.remove('hidden');
         loader.classList.add('hidden');
     });
+});
+refreshButton.addEventListener('click', () => {
+    // Reset input field
+    questionInput.value = '';
+    // Hide response text, audio player, and download button
+    responseText.classList.add('hidden');
+    audioContainer.classList.add('hidden');
+    downloadButton.classList.add('hidden');
+    // Clear audio player source
+    audioPlayer.src = '';
 });
